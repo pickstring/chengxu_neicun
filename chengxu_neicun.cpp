@@ -15,6 +15,7 @@ int* func() {
 
 //堆区
 int* func1() {
+	//指针本质也是局部变量，放在栈上，指针保存的数据放在堆上
 	int* a = new int(10);//返回new出来的地址
 	return a;
 }
